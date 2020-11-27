@@ -1,0 +1,45 @@
+body {
+    margin: 0px 0px 0px 0px;
+}
+
+.wrapper {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin: 0 auto;
+    border: 2px solid gray;
+}
+
+
+.wrapper header {
+    box-sizing: border-box;
+    width: 100%;
+    height: 15vh;
+    max-height: 400px;
+    background-color: darkgray;
+    border-bottom: 3px solid gray;
+}
+
+.wrapper main {
+    box-sizing: border-box;
+    width: 75%;
+    background-color: darkgray;
+    border-bottom: 3px solid gray;
+}
+
+.wrapper aside {
+    box-sizing: border-box;
+    width: 25%;
+    background-color: darkgray;
+    border-left: 3px solid gray;
+    border-bottom: 3px solid gray;
+}
+
+.wrapper footer {
+    box-sizing: border-box;
+    width: 100%;
+    height: 15vh;
+    max-height: 400px;
+    background-color: darkgray;
+}
