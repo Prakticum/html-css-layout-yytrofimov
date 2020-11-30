@@ -100,3 +100,7 @@ body {
   height: 150px;
   width: auto;
 }
+
+.image {
+  width: 250px;
+}
