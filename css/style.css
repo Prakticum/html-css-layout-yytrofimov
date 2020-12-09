@@ -5,13 +5,12 @@ body {
 
 .wrapper {
   box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 75% 25%;
   max-width: 1000px;
   min-width: 600px;
   margin: 0 auto;
   background-color: white;
-  color: gray;
   padding: 20px;
 }
 
@@ -24,34 +23,35 @@ body {
   background-color: gainsboro;
   padding: 20px;
   justify-content: space-between;
+  grid-column: 1 / span 2;
 }
 
 .wrapper main {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  width: 75%;
   padding: 20px;
+  grid-column: 1;
 }
 
 .wrapper aside {
   display: flex;
   box-sizing: border-box;
-  width: 25%;
   background-color: rgb(207, 203, 203);
   padding: 20px;
   flex-wrap: wrap;
+  grid-column: 2;
 }
 
 .wrapper footer {
   box-sizing: border-box;
-  width: 100%;
   max-height: 400px;
   background-color: gainsboro;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   padding: 20px;
+  grid-column: 1 / span 2;
 }
 
 .borded {
