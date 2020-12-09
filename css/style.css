@@ -1,0 +1,175 @@
+body {
+  margin: 0px 0px 0px 0px;
+  background-color: gray;
+}
+
+.wrapper {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  max-width: 1000px;
+  min-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+}
+
+.wrapper header {
+  grid-column: 1 / span 2;
+}
+.wrapper header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.desktop_menu {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: gainsboro;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.mobile_menu {
+  display: none;
+}
+.wrapper main {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 20px;
+  grid-column: 1;
+  flex-wrap: wrap;
+}
+
+.wrapper aside {
+  display: flex;
+  box-sizing: border-box;
+  background-color: rgb(207, 203, 203);
+  padding: 20px;
+  grid-column: 2;
+  flex-wrap: wrap;
+}
+
+.wrapper footer {
+  box-sizing: border-box;
+  background-color: gainsboro;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  grid-column: 1 / span 2;
+  flex-wrap: wrap;
+}
+
+.borded {
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 10px;
+  list-style: none;
+  border: 1px solid gray;
+  text-align: center;
+}
+
+.active {
+  box-shadow: 0 0 5px 2px;
+  font-weight: bolder;
+}
+
+.wrapper a {
+  text-decoration: none;
+  color: gray;
+}
+
+.wrapper h1 {
+  color: gray;
+}
+
+.products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.image img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.image {
+  width: 200px;
+}
+
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color:  gainsboro;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: rgb(104, 101, 101);
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: rgb(168, 161, 161);
+  color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  .desktop_menu {
+    flex-direction: column;
+  }
+  .desktop_menu ul {
+    flex-direction: column;
+  }
+
+  .wrapper main {
+    grid-column: 1 / span 2;
+  }
+
+  .wrapper aside {
+    grid-column: 1 / span 2;
+  }
+
+  .wrapper footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .products {
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  .desktop_menu {
+    display: none;
+  }
+
+  .mobile_menu {
+    display: block;
+  }
+}
