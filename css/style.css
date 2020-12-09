@@ -31,6 +31,9 @@ body {
   flex-wrap: wrap;
 }
 
+.mobile_menu {
+  display: none;
+}
 .wrapper main {
   display: flex;
   flex-direction: column;
@@ -98,6 +101,42 @@ body {
   width: 200px;
 }
 
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color:  gainsboro;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: rgb(104, 101, 101);
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: rgb(168, 161, 161);
+  color: black;
+}
+
 @media only screen and (max-width: 600px) {
   .desktop_menu {
     flex-direction: column;
@@ -122,5 +161,15 @@ body {
 
   .products {
     justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  .desktop_menu {
+    display: none;
+  }
+
+  .mobile_menu {
+    display: block;
   }
 }
